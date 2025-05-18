@@ -1,24 +1,28 @@
 package com.anirbandhara.pages;
 
+import com.anirbandhara.base.CommonToAllPages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 
-public class DashBoard {
+
+public class DashboardPage extends CommonToAllPages {
     WebDriver driver;
-    By pimMenu = By.xpath("//span[text()='PIM']");
 
-    public DashBoard(WebDriver driver) {
+    public DashboardPage(WebDriver driver) {
         this.driver = driver;
     }
 
+    private By pimTab = By.xpath("//span[text() = 'PIM']");
+    private By logoutDropdown = By.xpath("//span[@class='oxd-userdropdown-tab']");
+    private By logoutBtn = By.linkText("Logout");
+
     public void navigateToPIM() {
-        Actions actions = new Actions(driver);
-        actions.moveToElement(driver.findElement(pimMenu)).click().perform();
+       clickElement(pimTab);
     }
 
-    public void logout() {
-        driver.findElement(By.className("oxd-userdropdown-name")).click();
-        driver.findElement(By.linkText("Logout")).click();
+    public void logout() throws InterruptedException {
+        clickElement(logoutDropdown);
+        Thread.sleep(2000);
+        clickElement(logoutBtn);
     }
 }
