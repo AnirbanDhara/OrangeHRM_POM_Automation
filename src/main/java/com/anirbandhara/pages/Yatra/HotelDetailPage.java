@@ -2,13 +2,12 @@ package com.anirbandhara.pages.Yatra;
 
 import com.anirbandhara.base.CommonToAllPages;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static com.anirbandhara.driver.DriverManager.getDriver;
+
 
 public class HotelDetailPage extends CommonToAllPages {
 
@@ -40,14 +39,9 @@ public class HotelDetailPage extends CommonToAllPages {
             }
         }
 
-
-
-
-
         wait.until(ExpectedConditions.presenceOfElementLocated(bookingButton));
-        Actions actions = new Actions(driver);
-        actions.sendKeys(Keys.PAGE_UP).build().perform();
-        WebElement button = driver.findElement(bookingButton);
+        scrollUp();
+//        WebElement button = driver.findElement(bookingButton);
 //        System.out.println("Button Text: " + button.getText());
 
         wait.until(ExpectedConditions.elementToBeClickable(bookingButton));
