@@ -1,4 +1,4 @@
-package com.anirbandhara.pages;
+package com.anirbandhara.pages.OrangeHRM;
 
 import com.anirbandhara.base.CommonToAllPages;
 import org.openqa.selenium.By;

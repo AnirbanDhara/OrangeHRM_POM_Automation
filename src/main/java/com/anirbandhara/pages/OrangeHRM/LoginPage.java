@@ -1,4 +1,4 @@
-package com.anirbandhara.pages;
+package com.anirbandhara.pages.OrangeHRM;
 
 import com.anirbandhara.base.CommonToAllPages;
 import org.openqa.selenium.By;
@@ -17,7 +17,7 @@ public class LoginPage extends CommonToAllPages {
     private By loginBtn = By.xpath("//button[@type='submit']");
 
     public void login(String user, String pass) throws InterruptedException {
-        openOrangeHRMUrl();
+        //openOrangeHRMUrl();
         Thread.sleep(2000);
         enterInput(username,user);
         enterInput(password,pass);

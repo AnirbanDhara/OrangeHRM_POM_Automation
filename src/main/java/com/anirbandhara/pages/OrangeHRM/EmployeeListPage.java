@@ -1,4 +1,4 @@
-package com.anirbandhara.pages;
+package com.anirbandhara.pages.OrangeHRM;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

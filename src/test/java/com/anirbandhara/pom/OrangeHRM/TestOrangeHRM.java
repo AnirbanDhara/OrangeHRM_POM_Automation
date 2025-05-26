@@ -1,10 +1,10 @@
-package com.anirbandhara.pom;
+package com.anirbandhara.pom.OrangeHRM;
 
 import com.anirbandhara.base.CommonToAllTest;
-import com.anirbandhara.pages.DashboardPage;
-import com.anirbandhara.pages.EmployeeListPage;
-import com.anirbandhara.pages.LoginPage;
-import com.anirbandhara.pages.PIMPage;
+import com.anirbandhara.pages.OrangeHRM.DashboardPage;
+import com.anirbandhara.pages.OrangeHRM.EmployeeListPage;
+import com.anirbandhara.pages.OrangeHRM.LoginPage;
+import com.anirbandhara.pages.OrangeHRM.PIMPage;
 import com.anirbandhara.utils.PropertiesReader;
 import org.testng.annotations.Test;
 

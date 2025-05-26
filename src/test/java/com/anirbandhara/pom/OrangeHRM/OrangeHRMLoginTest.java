@@ -1,4 +1,4 @@
-package com.anirbandhara.pom;
+package com.anirbandhara.pom.OrangeHRM;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
