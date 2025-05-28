@@ -9,12 +9,10 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import java.util.Properties;
-import java.util.Scanner;
 
 public class DriverManager {
 
-    public static WebDriver driver;
+    private static WebDriver driver;
 
     public static WebDriver getDriver() {
         return driver;
